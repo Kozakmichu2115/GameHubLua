@@ -3908,6 +3908,24 @@ footer {
                 </div>
             </div>
 			
+			<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="rpg premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/0c4806ac39e2008ed4ff0249bfb43d02f7e87e24/header.jpg?t=1758136596" alt="Voyagers of Nera">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Voyagers of Nera</h3>
+                    <span class="game-category">RPG</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Wspólne żeglowanie po magicznym oceanie, budowa wysp i ratowanie duchów. Voyagers of Nera zaprasza do kooperacji, eksploracji i przetrwania w świecie pełnym tajemnic i potworów."</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('Voyagers of Nera', 'rpg', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/0c4806ac39e2008ed4ff0249bfb43d02f7e87e24/header.jpg?t=1758136596')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
 			<!-- Game Card 25 -->
             <div class="game-card" data-category="sports">
                 <div class="game-image">
@@ -8000,12 +8018,12 @@ function closeModal(modalId) {
                     'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/284160/ss_ac6c91223f4f12662a9ae7c3a06e2c951a2551f0.600x338.jpg?t=1743607220',
                     'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/284160/ss_1b129249ad662d242a81a34ee2fdcdcbe064eb32.600x338.jpg?t=1743607220'
                 ],
-				'The Witcher 3': [
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_0901e64e9d4b8ebaea8348c194e7a3644d2d832d.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_112b1e176c1bd271d8a565eacb6feaf90f240bb2.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.600x338.jpg?t=1749199563'
+				'Voyagers of Nera': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/193174121ad6129559e3cb8e08048daba412a0d3/ss_193174121ad6129559e3cb8e08048daba412a0d3.600x338.jpg?t=1758136596',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/ss_31b7a0e200e82cdaf8e8833be2a65671afa83120.600x338.jpg?t=1758136596',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/c63e604668752b6392f7fa85f0f8f8cbbed4c9f2/ss_c63e604668752b6392f7fa85f0f8f8cbbed4c9f2.600x338.jpg?t=1758136596',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/ss_4d89b14c9dcafe68153c940067cd93ff9db0d603.600x338.jpg?t=1758136596',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2686630/fae7f978b12b5a313c8a9504efeb38e3db780fa5/ss_fae7f978b12b5a313c8a9504efeb38e3db780fa5.600x338.jpg?t=1758136596'
                 ],
 				'The Witcher 3': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.600x338.jpg?t=1749199563',
@@ -8172,6 +8190,7 @@ function closeModal(modalId) {
 				'Car Dealer Simulator': 'https://pixeldrain.com/u/a3GorcWy',
 				'Aseprite': 'https://pixeldrain.com/u/LfzBqUgJ',
 				'Scrap Mechanic': 'https://pixeldrain.com/u/ZfGrecsZ',
+				'Voyagers of Nera': 'https://pixeldrain.com/u/CA3LiUkW',
 				'Dead Island Definitive Edition': 'https://pixeldrain.com/u/7XCa3mKh',
 				'Far Cry New Dawn': 'https://pixeldrain.com/u/iJWgSLRE',
 				'Spec Ops: The Line': 'https://pixeldrain.com/u/829B799q',
@@ -8387,6 +8406,7 @@ function closeModal(modalId) {
 				'DLC Euro Truck Simulator 2': 'Wejdź za kierownicę i odkryj całą Europę wraz z oficjalnymi rozszerzeniami. Od malowniczych autostrad Skandynawii po kręte drogi Bałkanów – zbuduj transportowe imperium i poczuj prawdziwą wolność na trasie.',
 				'Accident': 'Każda sekunda ma znaczenie. Symulator ratowania ofiar wypadków – sprawdź się jako bohater przypadkiem, ucz się zasad pierwszej pomocy i zmierz z presją.',
                 'Watch Dogs': 'Vigilante w Chicago. System ctOS i inwigilacja.',
+				'Voyagers of Nera': 'Wyrusz w podróż po oceanie pełnym sekretów. Odkrywaj wyspy, współpracuj z towarzyszami i zmierz się z tajemniczymi stworzeniami Nery.',
                 'Detroit Become Human': 'Interaktywne drama o androidach. 100+ zakończeń.',
 				'Schedule I': 'Od dilera do bossa – produkuj narkotyki, buduj imperium i przejmij kontrolę nad Hyland Point.',
 				'Metal Gear Solid Phantom Pain': 'Od ducha wojny do cienia zemsty – jako Venom Snake infiltruj, rekrutuj i buduj armię w brutalnym świecie pogrążonym w konfliktach. Swoboda działania, skradanie i taktyczna zemsta w największej odsłonie serii Metal Gear.',
