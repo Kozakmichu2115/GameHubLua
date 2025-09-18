@@ -1594,7 +1594,28 @@ footer {
         </div>
     </header>
 	
-	
+	<!-- Download Limit Modal -->
+<div id="downloadLimitModal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <span class="close" onclick="closeModal('downloadLimitModal')">&times;</span>
+        <h2 class="modal-title">Limit Pobierania</h2>
+        <div style="text-align: center; margin: 20px 0;">
+            <i class="fas fa-clock" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+            <p>Osiągnąłeś limit pobierania dla konta standardowego.</p>
+            <p>Możesz pobrać kolejną grę za:</p>
+            <div class="download-timer">
+                <i class="fas fa-hourglass-half"></i>
+                Pozostały czas: <span class="timer-countdown" id="timerCountdown">02:00:00</span>
+            </div>
+            <p style="margin-top: 20px;">Odblokuj pełny dostęp do wszystkich gier bez ograniczeń z kontem Premium!</p>
+        </div>
+        <div style="text-align: center;">
+            <button class="btn pulse" onclick="showPremiumModal(); closeModal('downloadLimitModal')" style="width: 100%;">
+                <i class="fas fa-crown"></i> Kup Premium
+            </button>
+        </div>
+    </div>
+</div>
 
     <!-- Auth Modal -->
     <div class="auth-modal" id="authModal">
@@ -3936,6 +3957,24 @@ footer {
                     <span class="game-category">Sportowe</span>
                     <p class="game-description">Zakaz skrótów, karne sekundy i wypadki na zakręcie. Symulator krzyczenia: „TO JUŻ?!”. Kierownica nieobowiązkowa, ale zalecana.</p>
                     <button class="download-btn" onclick="checkAuthBeforeDownload('WRC 9 FIA World Rally', 'sports', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1267540/header.jpg?t=1725354407')">Pobierz</button>
+                </div>
+            </div>
+			
+						<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="horror premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1756397337" alt="7 Days to Die">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">7 Days to Die</h3>
+                    <span class="game-category">Horror</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">7 Days to Die łączy survival, crafting, eksplorację i brutalną walkę z hordami zombie w sandboxowym świecie zniszczonym przez apokalipsę.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('7 Days to Die', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/header.jpg?t=1756397337')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
                 </div>
             </div>
     </section>
@@ -8032,12 +8071,12 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad.600x338.jpg?t=1749199563',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.600x338.jpg?t=1749199563'
                 ],
-				'The Witcher 3': [
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_0901e64e9d4b8ebaea8348c194e7a3644d2d832d.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_112b1e176c1bd271d8a565eacb6feaf90f240bb2.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.600x338.jpg?t=1749199563'
+				'7 Days to Die': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/766ed3debfe7b894fbb5650aa89fa213fa254d5d/ss_766ed3debfe7b894fbb5650aa89fa213fa254d5d.600x338.jpg?t=1756397337',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/a329eafb70801633ffa31c435be83164790eb4ff/ss_a329eafb70801633ffa31c435be83164790eb4ff.600x338.jpg?t=1756397337',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/33edbeefc7f5ff8ccda4bda274b01eff84eb4eb8/ss_33edbeefc7f5ff8ccda4bda274b01eff84eb4eb8.600x338.jpg?t=1756397337',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/70c05a775f747e9d556435bfd8795536ddd4117d/ss_70c05a775f747e9d556435bfd8795536ddd4117d.600x338.jpg?t=1756397337',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/251570/8aff547df25c2d393fbdef2977dc109806de3112/ss_8aff547df25c2d393fbdef2977dc109806de3112.600x338.jpg?t=1756397337'
                 ],
 				'DLC Euro Truck Simulator 2': [
                     'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/558244/81e219d061a698d9195fd54f12490fd39d667c52/header.jpg?t=1753961929',
@@ -8228,7 +8267,8 @@ function closeModal(modalId) {
 				'Sandwich Simulator': 'https://pixeldrain.com/u/8yyXU686',
 				'Accident': 'https://pixeldrain.com/u/qLWYBvnH',
 				'South Park Fractured but Whole': 'https://pixeldrain.com/u/Fkf1LenS',
-				'DLC Euro Truck Simulator 2': 'https://pixeldrain.com/u/S9wPGzUS',
+				'DLC Euro Truck Simulator 2': 'https://pixeldrain.com/u/MDpGipwv',
+				'7 Days To Die': 'https://pixeldrain.com/u/T1JjJ4RT',
 				'Firefighting Simulator Ignite': 'https://pixeldrain.com/u/zbe5MP2q',
                 'Metro Exodus': 'https://pixeldrain.com/u/i7dAGLPr'
             };
@@ -8409,6 +8449,7 @@ function closeModal(modalId) {
 				'Voyagers of Nera': 'Wyrusz w podróż po oceanie pełnym sekretów. Odkrywaj wyspy, współpracuj z towarzyszami i zmierz się z tajemniczymi stworzeniami Nery.',
                 'Detroit Become Human': 'Interaktywne drama o androidach. 100+ zakończeń.',
 				'Schedule I': 'Od dilera do bossa – produkuj narkotyki, buduj imperium i przejmij kontrolę nad Hyland Point.',
+				'7 Days to Die': 'Survival horror w otwartym świecie – buduj, poluj, craftuj i walcz o życie w apokalipsie zombie, gdzie każdy siódmy dzień przynosi największe zagrożenie.',
 				'Metal Gear Solid Phantom Pain': 'Od ducha wojny do cienia zemsty – jako Venom Snake infiltruj, rekrutuj i buduj armię w brutalnym świecie pogrążonym w konfliktach. Swoboda działania, skradanie i taktyczna zemsta w największej odsłonie serii Metal Gear.',
 				'BeamNG drive': 'to realistyczny symulator jazdy i zderzeń, w którym każdy detal fizyki pojazdów został odwzorowany z niezwykłą dokładnością. Gra oferuje ogromną swobodę – od spokojnej jazdy po malowniczych trasach.',
 				'PANICORE': 'Strach to wasz wspólny wróg. Wejdźcie razem do przeklętego miejsca i znajdźcie drogę ucieczki, zanim coś was znajdzie pierwsze. PANICORE to czysty lęk zamknięty w kooperacyjnej rozgrywce.',
@@ -8690,4 +8731,3 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 </body>
 </html>
-
