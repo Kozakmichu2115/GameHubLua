@@ -4021,6 +4021,37 @@ footer {
                     <button class="download-btn" onclick="checkAuthBeforeDownload('Content Warning', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg?t=1736717925')">Pobierz</button>
                 </div>
             </div>
+			
+			<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="horror premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/header.jpg?t=1755623287" alt="Dying Light 2 Reloaded Edition">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Dying Light 2 Reloaded Edition</h3>
+                    <span class="game-category">Horror</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Stań do walki o przyszłość ludzkości. W Reloaded Edition otrzymujesz podstawową grę Dying Light 2 Stay Human wraz z nową zawartością, trybami i poprawioną rozgrywką.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('Dying Light 2 Reloaded Edition', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/header.jpg?t=1755623287')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+
+<!-- Game Card 25 -->
+            <div class="game-card" data-category="simulation">
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/39897fe22ba204a2dfeb7855c7ad4eef7f61e514/header.jpg?t=1751976108" alt="Bakery Cafe Simulator">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Bakery Cafe Simulator</h3>
+                    <span class="game-category">Symulatory</span>
+                    <p class="game-description">Bakery Cafe Simulator to symulator zarządzania piekarnią i kawiarnią – przygotowuj wypieki, obsługuj gości i dbaj o rozwój lokalu..</p>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('Bakery Cafe Simulator', 'simulation', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/39897fe22ba204a2dfeb7855c7ad4eef7f61e514/header.jpg?t=1751976108')">Pobierz</button>
+                </div>
+            </div>
     </section>
 
         <!-- Pagination -->
@@ -7003,7 +7034,7 @@ function closeModal(modalId) {
 				'Dead Space 3',
 				'Dragon Age Inquisition',
 				'Dying Light The Beast',
-				's',
+				'Dying Light 2 Reloaded Edition',
 				's',
 				's',
 				's',
@@ -7982,12 +8013,12 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/c5d4057a82c0a72092494e0e7ba3188e22dfe477/ss_c5d4057a82c0a72092494e0e7ba3188e22dfe477.600x338.jpg?t=1751926051',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a9b00612e3e3bbc111a6dc53a5a861d38b77c9df.600x338.jpg?t=1751926051'
                 ],
-				'The Witcher 3': [
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_0901e64e9d4b8ebaea8348c194e7a3644d2d832d.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_112b1e176c1bd271d8a565eacb6feaf90f240bb2.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad.600x338.jpg?t=1749199563',
-                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.600x338.jpg?t=1749199563'
+				'Bakery Cafe Simulator': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/ss_7fc91794d0f84c5f112240ce5e92f18a4cfc1461.600x338.jpg?t=1751976108',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/ss_789c5b2c7f56e5121b5c047f2c199c93c2be67e1.600x338.jpg?t=1751976108',
+                    'hhttps://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/ss_c1de975858f804f1fc5e805123ef41ff921d5b4f.600x338.jpg?t=1751976108',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/ss_082f11025c4adfdd5c68b6fdc33164277b86060b.600x338.jpg?t=1751976108',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3444080/ss_d697ebd7bd0da72ead8c62cc673e06ffc04591a9.600x338.jpg?t=1751976108'
                 ],
 				'Assassins Creed Valhalla': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/ss_103481084a59b34837113daf27c04679caf743f3.600x338.jpg?t=1751969601',
@@ -8135,6 +8166,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_6efecf505052b51071024f32dc4db364cbb0ab6e.600x338.jpg?t=1752701847',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_43e9c59d968e7f99f1eef065af85b3e542100366.600x338.jpg?t=1752701847',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_f64515607fd627aa9436be3b15fdcb9e1c89bb19.600x338.jpg?t=1752701847'
+				],
+				'Dying Light 2 Reloaded Edition': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/ss_df6aeb006060f7b26439f4bc7bee8b9e96c80e02.600x338.jpg?t=1755623287',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/ss_9ba79964c3878648a1469d263df7fb17fc3d521c.600x338.jpg?t=1755623287',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/ss_fe9a52a60f4739a44cbd8b0c0856033ea6996624.600x338.jpg?t=1755623287',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/ss_84ca00f3d3b48e0a1fa6b96b17f02a65f1447950.600x338.jpg?t=1755623287',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/534380/ss_64ba1a8bd42d3d0a34bc894d6faa0e57a1328aef.600x338.jpg?t=1755623287'
                 ],
                 'Outlast': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238320/ss_de19e8b1f41d9594bf64d02424a0ec5046c733f5.600x338.jpg?t=1666817106',
@@ -8313,6 +8351,8 @@ function closeModal(modalId) {
 				'Mirrors Edge Catalyst': 'https://pixeldrain.com/u/Dkmzo5eo',
 				'Sandwich Simulator': 'https://pixeldrain.com/u/8yyXU686',
 				'Accident': 'https://pixeldrain.com/u/qLWYBvnH',
+				'Dying Light 2 Reloaded Edition': 'https://pixeldrain.com/u/CGpaWUkE',
+				'Bakery Cafe Simulator': 'https://pixeldrain.com/u/y45nUPiL',
 				'South Park Fractured but Whole': 'https://pixeldrain.com/u/Fkf1LenS',
 				'DLC Euro Truck Simulator 2': 'https://pixeldrain.com/u/MDpGipwv',
 				'7 Days To Die': 'https://pixeldrain.com/u/T1JjJ4RT',
@@ -8478,6 +8518,8 @@ function closeModal(modalId) {
                 'Garrys Mod': 'Fizyczna piaskownica bez celów. Tysiące modów i machin contraptions.',
                 'Police Simulator Patrol Officers': 'Od mandatów po pościgi. Realistyczne przepisy drogowe.',
                 'Green Hell': 'Survival w amazońskiej dżungli. System infekcji i halucynacji.',
+				'Dying Light 2 Reloaded Edition': 'Dying Light 2 Reloaded Edition to pełne wydanie hitu z otwartym światem. Parkour, walka wręcz i przetrwanie w mieście pogrążonym w mroku – teraz z dodatkami i ulepszeniami.',
+				'Bakery Cafe Simulator': 'Stwórz własną piekarnię i kawiarnię od podstaw. Piecz, serwuj i rozwijaj biznes, by przyciągnąć klientów i zbudować smakowe imperium.',
 				'Content Warning': 'Content Warning łączy survival horror z komedią – eksploruj, nagrywaj i wrzucaj do sieci, ale pamiętaj: dla sławy musisz przeżyć.',
                 'Raft': 'Dryfowanie i rozbudowa tratwy. Rekiny i podwodne eksploracje.',
                 'LEGO MARVEL Super Heroes 2': 'Kang i Chronopolis. 200+ postaci z całego Marvela.',
