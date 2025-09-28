@@ -1738,6 +1738,7 @@ footer {
                 <button class="category-btn" data-category="simulation">Symulatory</button>
                 <button class="category-btn" data-category="horror">Horror</button>
                 <button class="category-btn" data-category="fps">Strzelanki</button>
+				<button class="category-btn" data-category="dodatki">DLC</button>
 				<button class="category-btn" data-category="lego">LEGO</button>
 				<button class="category-btn active" data-category="all">Wszystkie</button>
                 <button class="category-btn premium" data-category="premium">Premium</button>
@@ -3701,15 +3702,15 @@ footer {
             </div>
 			
 			<!-- Game Card 25 -->
-            <div class="game-card" data-category="simulation">
+            <div class="game-card" data-category="dodatki">
                 <div class="game-image">
-                    <img src="https://mosbymods.de/gallery/pic2.png?ts=1758038032" alt="DLC Euro Truck Simulator 2">
+                    <img src="https://i.imgur.com/ymFo1N1.png" alt="DLC Euro Truck Simulator 2">
                 </div>
                 <div class="game-info">
                     <h3 class="game-title">DLC Euro Truck Simulator 2</h3>
-                    <span class="game-category">Symulatory</span>
+                    <span class="game-category">dodatki</span>
                     <p class="game-description">Euro Truck Simulator 2 z pełnym zestawem dodatków – odkrywaj Europę i poza nią, prowadź własną firmę transportową, rozwijaj flotę ciężarówek i przemierzaj tysiące kilometrów dróg w najbardziej kompletnej wersji gry.</p>
-                    <button class="download-btn" onclick="checkAuthBeforeDownload('DLC Euro Truck Simulator 2', 'simulation', 'https://mosbymods.de/gallery/pic2.png?ts=1758038032')">Pobierz</button>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('DLC Euro Truck Simulator 2', 'dodatki', 'https://i.imgur.com/ymFo1N1.png')">Pobierz</button>
                 </div>
             </div>
 			
@@ -4120,6 +4121,45 @@ footer {
                 </div>
                 <div class="download-instructions" id="witcher3Instructions" style="display: none;">
                     <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
+			<!-- Game Card 25 -->
+            <div class="game-card" data-category="horror">
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/header.jpg?t=1743335491" alt="DEVOUR">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">DEVOUR</h3>
+                    <span class="game-category">Horror</span>
+                    <p class="game-description">Kooperacyjny horror dla 1–4 osób. Powstrzymaj opętanego kultystę, zbieraj przedmioty rytualne i współpracuj, by przeżyć koszmar.</p>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('DEVOUR', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/header.jpg?t=1743335491')">Pobierz</button>
+                </div>
+            </div>
+			
+			<!-- Game Card 25 -->
+            <div class="game-card" data-category="horror">
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1739309087" alt="Project Zomboid">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Project Zomboid</h3>
+                    <span class="game-category">Horror</span>
+                    <p class="game-description">Project Zomboid to izometryczny survival w świecie opanowanym przez zombie. Zbieraj zasoby, buduj schronienia i walcz o każdy dzień swojego życia.</p>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('Project Zomboid', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg?t=1739309087')">Pobierz</button>
+                </div>
+            </div>
+			
+			<!-- Game Card 25 -->
+            <div class="game-card" data-category="dodatki">
+                <div class="game-image">
+                    <img src="https://i.imgur.com/FPPMCMP.png" alt="DLC The Sims 4">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">DLC The Sims 4</h3>
+                    <span class="game-category">dodatki</span>
+                    <p class="game-description">The Sims 4 z pełnym zestawem dodatków i akcesoriów – twórz unikalne postacie, buduj wymarzone domy i odkrywaj wszystkie możliwe światy, style i historie.</p>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('DLC The Sims 4', 'dodatki', 'https://i.imgur.com/FPPMCMP.png')">Pobierz</button>
                 </div>
             </div>
     </section>
@@ -7278,6 +7318,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238820/ss_c378ec3b0951e274244f337cf6fd42cd0ce875ed.600x338.jpg?t=1734373919',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238820/ss_bec636fba276b96066f4f73d1f28034962bc15ea.600x338.jpg?t=1734373919'
 				],
+				'DLC The Sims 4': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2815290/header.jpg?t=1737020514',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1776780/header.jpg?t=1758322052',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1368571/header.jpg?t=1758753945',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1235766/header.jpg?t=1758752812',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1235764/header.jpg?t=1757964369'
+				],
                 'Supermarket Simulator': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2670630/b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d/ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg?t=1750407211',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2670630/d7a5a9f57ed36a5552e2892fffda6aa171f9fe95/ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg?t=1750407211',
@@ -8083,6 +8130,20 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad.600x338.jpg?t=1749199563',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.600x338.jpg?t=1749199563'
                 ],
+				'DEVOUR': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/ss_74c69c54b1b4f2dc14789e001787c6b462549698.600x338.jpg?t=1743335491',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/ss_45cba337b726295b3ae6342b2ba9efefa9e6d8bc.600x338.jpg?t=1743335491',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/ss_65b0bd84707c9c8b58a81adee7600014ca0cdeb8.600x338.jpg?t=1743335491',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/ss_7545218574056a589e033425412d14b963b09e9a.600x338.jpg?t=1743335491',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/ss_36738ba47b3b784fa6985cb9e4e835dd76a61087.600x338.jpg?t=1743335491'
+                ],
+				'Project Zomboid': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/ss_d4a0f78dc94273c7f0eedc186569efc091387066.600x338.jpg?t=1739309087',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/ss_eca8be032b3f5508bf5bea74cfbc823a4df047ce.600x338.jpg?t=1739309087',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/ss_7300ecc70342b6fcbdf39b6f9ff4c408066f8fc2.600x338.jpg?t=1739309087',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/ss_eb1862af5109e4658e2538d897cbd16b87ad1818.600x338.jpg?t=1739309087',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/ss_3b21d79855804e2a73468328a8fd18df0d238a2a.600x338.jpg?t=1739309087'
+                ],
 				'Schedule I': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_74961b6f52d7694b12c272c37d69551fc08a1ccb.600x338.jpg?t=1751926051',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_e4f243245a60f8a65eb82b1288ed67d8d8cf2b4e.600x338.jpg?t=1751926051',
@@ -8413,6 +8474,8 @@ function closeModal(modalId) {
 				'Slime Rancher 2': 'https://pixeldrain.com/u/sfATsETv',
 				'Slime Rancher': 'https://pixeldrain.com/u/NvBNeecZ',
 				'Assassins Creed': 'https://pixeldrain.com/u/g34jX6h7',
+				'Assassins Creed': 'https://pixeldrain.com/u/g34jX6h7',
+				'DEVOUR': 'https://pixeldrain.com/u/a9bU2wa5',
 				'Ranch Simulator': 'https://pixeldrain.com/u/JjEuDQoV',
 				'Car Dealer Simulator': 'https://pixeldrain.com/u/a3GorcWy',
 				'Aseprite': 'https://pixeldrain.com/u/LfzBqUgJ',
@@ -8461,6 +8524,8 @@ function closeModal(modalId) {
 				'Mirrors Edge Catalyst': 'https://pixeldrain.com/u/Dkmzo5eo',
 				'Sandwich Simulator': 'https://pixeldrain.com/u/8yyXU686',
 				'Accident': 'https://pixeldrain.com/u/qLWYBvnH',
+				'DLC The Sims 4': 'https://pixeldrain.com/u/skrCuEgX',
+				'Project Zomboid': 'https://pixeldrain.com/u/AnF1Vc37',
 				'Dying Light 2 Reloaded Edition': 'https://pixeldrain.com/u/CGpaWUkE',
 				'Bakery Cafe Simulator': 'https://pixeldrain.com/u/y45nUPiL',
 				'South Park Fractured but Whole': 'https://pixeldrain.com/u/Fkf1LenS',
@@ -8566,6 +8631,8 @@ function closeModal(modalId) {
                 'Spec Ops: The Line': 'Piasek, PTSD i fabuła, która wchodzi w głowę. FPS, po którym potrzebujesz prysznica moralnego.',
                 'Enemy Front': 'Strzelaj do nazistów, ratuj historię. Klasyczne BOOM! w mundurze i z karabinem.',
                 'Tomb Raider': 'Lara Croft przed szkoleniem. Upadki, siniaki i pierwsze morderstwa w imię archeologii.',
+				'DEVOUR': 'DEVOUR to intensywny survival horror – graj sam lub ze znajomymi i staw czoła bezlitosnym siłom zła, zanim one dopadną Ciebie.',	
+				'Project Zomboid': 'Samotnie lub z przyjaciółmi – eksploruj, craftuj i przetrwaj. W Project Zomboid każda decyzja ma znaczenie, a śmierć jest ostateczna.',
                 'X-Plane 12': 'Latanie, spadanie i checklisty. Symulator pilotów i ich frustracji. Turbulencje w pakiecie.',
                 'Age of History 3': 'Klikaj, podbijaj, przegraj przez bunt Estonii. Strategia dla cierpliwych i tych, co lubią mapy.',
                 'Wrap House Simulator': 'Fast food z dramatem w tle. Burrito, cebula i stres przed godzinami szczytu. Smak zwycięstwa jest słony.',
@@ -8633,6 +8700,8 @@ function closeModal(modalId) {
 				'Bakery Cafe Simulator': 'Stwórz własną piekarnię i kawiarnię od podstaw. Piecz, serwuj i rozwijaj biznes, by przyciągnąć klientów i zbudować smakowe imperium.',
 				'Content Warning': 'Content Warning łączy survival horror z komedią – eksploruj, nagrywaj i wrzucaj do sieci, ale pamiętaj: dla sławy musisz przeżyć.',
                 'Raft': 'Dryfowanie i rozbudowa tratwy. Rekiny i podwodne eksploracje.',
+				'DLC The Sims 4': 'Rozwiń swoją kreatywność dzięki kompletnemu pakietowi The Sims 4. Nowe światy, pasje, zwierzęta, pory roku i niezliczone możliwości rozgrywki.',
+				'Project Zomboid': 'Otwarte miasto pełne zagrożeń, realizm i nieustanny strach. Project Zomboid to najpełniejsza symulacja apokalipsy zombie.',
                 'LEGO MARVEL Super Heroes 2': 'Kang i Chronopolis. 200+ postaci z całego Marvela.',
 				'Dying Light The Beast': 'Przebudź w sobie bestię i wykorzystaj jej moc, aby przetrwać. Eksploruj Castor Woods, walcz z hordami zombie i odkryj prawdę o swoich nowych zdolnościach.',
                 'The LEGO Movie Videogame': 'Przygoda Emmeta w klockowym świecie. Budowanie on-the-fly.',
