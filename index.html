@@ -4137,6 +4137,24 @@ footer {
                 </div>
             </div>
 			
+			<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="horror premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/header.jpg?t=1761318054" alt="VEIN">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">VEIN</h3>
+                    <span class="game-category">Horror</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Psychologiczny horror z pierwszej osoby, w którym odkrywasz mroczne tajemnice i walczysz z przerażającymi wizjami. MADiSON to napięcie i strach na każdym kroku.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('VEIN', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/header.jpg?t=1761318054')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
 			<!-- Game Card 25 -->
             <div class="game-card" data-category="horror">
                 <div class="game-image">
@@ -6109,9 +6127,11 @@ document.addEventListener('keydown', function(e) {
                 #PSP-XXXXXX
             </strong>
         </p>
-        <p style="margin: 10px 0;">
-            W razie problemów skontaktuj się z nami na Discordzie
-        </p>
+        <p style="margin: 10px 0; color: #c8ffc8; font-size: 14px; text-align: center; text-shadow: 0 0 5px #00ff88;">
+    W razie problemów skontaktuj się z nami na <strong>Discordzie</strong>.<br>
+    💳 Istnieje możliwość zakupu przez <strong>BLIK</strong> bezpośrednio na naszym Discordzie!<br>
+    Jeśli wpisałeś już kod, zostaniesz automatycznie przeniesiony na Discorda — tam utwórz <strong>ticket</strong> i prześlij <strong>ID zgłoszenia</strong>, aby dokończyć transakcję.
+</p>
     </div>
 </div>
 
@@ -6841,8 +6861,10 @@ function closeModal(modalId) {
             ID zgłoszenia: <strong id="premiumUserId" style="color: #ffd700;">#PSP-XXXXXX</strong>
         </p>
         <p style="margin: 10px 0;">
-            W razie problemów skontaktuj się z nami na Discordzie
-        </p>
+    W razie problemów skontaktuj się z nami na <strong>Discordzie</strong>.<br>
+    💳 Istnieje możliwość zakupu przez <strong>BLIK</strong> bezpośrednio na naszym Discordzie!<br>
+    Jeśli wpisałeś już kod, zostaniesz automatycznie przeniesiony na Discorda — tam utwórz <strong>ticket</strong> i prześlij <strong>ID zgłoszenia</strong>, aby dokończyć transakcję.
+</p>
     </div>
 </div>
 
@@ -7334,7 +7356,7 @@ function closeModal(modalId) {
 				'Transport Fever 2',
 				'Winter Resort Simulator 2',
 				'South Park The Stick of Truth',
-				's',
+				'VEIN',
 				's',
 				's',
 				's',
@@ -7467,6 +7489,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/ss_9e6c271b6d11b1d0f35da336fb57b35fed0079d1.600x338.jpg?t=1667468479',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/ss_b1e2a185bea13cccfc662e1286912bcd6f4ee798.600x338.jpg?t=1667468479',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/ss_fbc13a0d5b5b784c053042eb4ea09a30de069b3a.600x338.jpg?t=1667468479'
+				],
+                'VEIN': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/4cf2ffb8af7825c85d05e8a23487d931c1cb43a7/ss_4cf2ffb8af7825c85d05e8a23487d931c1cb43a7.600x338.jpg?t=1761318054',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/85a5497dd8a19f3f8c8def786914299382d8ebb6/ss_85a5497dd8a19f3f8c8def786914299382d8ebb6.600x338.jpg?t=1761318054',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/2769f4bc3a669f24d6a445de16a2a6f4515d0cef/ss_2769f4bc3a669f24d6a445de16a2a6f4515d0cef.600x338.jpg?t=1761318054',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/e2c2e1f3a9e6e50f4f20bb7d1563aa0d113e557c/ss_e2c2e1f3a9e6e50f4f20bb7d1563aa0d113e557c.600x338.jpg?t=1761318054',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1857950/05d559ad45f0ace5f6b7ec382ea1259ce0db960a/ss_05d559ad45f0ace5f6b7ec382ea1259ce0db960a.600x338.jpg?t=1761318054'
                 ],
                 'FIFA 23': [
                     'https://cdn.cloudflare.steamstatic.com/steam/apps/1506830/ss_65e3dc9a0c7cbe2e9b8c9da8e7a8e9b8c9da8e7.600x338.jpg',
@@ -8807,6 +8836,7 @@ function closeModal(modalId) {
 				'Dragon Age Inquisition': 'https://pixeldrain.com/u/fcFZoNRL',
 				'Jagged Alliance 3': 'https://pixeldrain.com/u/8ERrCJr3',
 				'Mirrors Edge Catalyst': 'https://pixeldrain.com/u/Dkmzo5eo',
+				'VEIN': 'https://pixeldrain.com/u/tfX6DcmT',
 				'Sandwich Simulator': 'https://pixeldrain.com/u/8yyXU686',
 				'Accident': 'https://pixeldrain.com/u/qLWYBvnH',
 				'RV There Yet?': 'https://pixeldrain.com/u/3YqNaP6r',
@@ -8906,6 +8936,7 @@ function closeModal(modalId) {
                 'The Isle': 'Dinozaury, prehistoria i prosta zasada: ty jadasz albo ciebie jedzą. Survival w najczystszej postaci.',
                 'Teardown': 'LEGO dla dorosłych. Rozwalaj, eksploduj, używaj spychacza jak miecza świetlnego. Fizyka w służbie chaosu.',
                 'Scoot': 'Tony Hawk w wersji minimalistycznej. Hulajnoga, tricki i asfalt na twarzy. Proste zasady: jedź lub giń.',
+				'VEIN': 'Krew to nowa waluta. Hakuj geny, modyfikuj ciało i walcz o przetrwanie w metropolii, która żyje twoim pulsem.',
 				'No Im not a Human': 'Wciel się w potwora, który próbuje udawać człowieka. No, I’m not a Human to surrealistyczna platformówka o tożsamości, buncie i potworach w ludzkiej skórze.',
 				'Parcel Simulator': 'Zarządzaj firmą kurierską i zadbaj, by każda paczka dotarła na czas. Sortuj, pakuj i doręczaj przesyłki w realistycznym symulatorze logistyki.',
 				'Transport Fever 2': 'Buduj i zarządzaj własnym imperium transportowym. Twórz linie kolejowe, drogi, porty i lotniska, rozwijając świat od epoki pary po czasy współczesne.',
