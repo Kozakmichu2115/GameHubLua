@@ -1845,6 +1845,24 @@ footer {
 			<div class="game-card premium" data-category="sports premium">
                 <div class="premium-badge">PREMIUM</div>
                 <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/header.jpg?t=1761235996" alt="The Crew 2">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">The Crew 2</h3>
+                    <span class="game-category">Sportowe</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Pełna prędkości piaskownica USA. Skacz, driftuj i ścigaj się samochodami, motorami, łodziami i samolotami po całym kraju.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('The Crew 2', 'sports', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/header.jpg?t=1761235996')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
+			<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="sports premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
                     <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1293830/header.jpg?t=1734336342" alt="Forza Horizon 4">
                 </div>
                 <div class="game-info">
@@ -7377,7 +7395,7 @@ function closeModal(modalId) {
 				'South Park The Stick of Truth',
 				'VEIN',
 				'PowerWash Simulator 2',
-				's',
+				'The Crew 2',
 				's',
 				's',
 				's',
@@ -7816,6 +7834,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203160/ss_8f34a87469f3a0c73049cbd0469bdff6e3d22713.600x338.jpg?t=1729010886',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203160/ss_822faf14b04eac6140067109e75a5a859f4f42db.600x338.jpg?t=1729010886',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203160/ss_7d3c4be984498b4374210a3291e5cf266fa6dd32.600x338.jpg?t=1729010886'
+				],
+				'The Crew 2': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/ss_4fe5544b606d1e99fddd46f6e98064077615f03c.600x338.jpg?t=1761235996',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/ss_34662385e6d2ab37b49eae52bee0800f5e2dc767.600x338.jpg?t=1761235996',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/ss_75f2de49e2e2d78bb6d3415bc3e1427b58d8a8c2.600x338.jpg?t=1761235996',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/ss_160e4f2c8c43081211f1da8dd5ff5e285a3a04ab.600x338.jpg?t=1761235996',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646910/ss_d7a89f47597c4c1ce2d0b49b0fc3e5f5e8e671e6.600x338.jpg?t=1761235996'
 				],
                 'X-Plane 12': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2014780/ss_3181b36161fcb4ef6d63b8f2e39c502fa2ef07c5.600x338.jpg?t=1736770770',
@@ -8854,6 +8879,7 @@ function closeModal(modalId) {
 				'Golf With Your Friends': 'https://pixeldrain.com/u/EmDDxBSh',
 				'Metal Gear Solid Phantom Pain': 'https://pixeldrain.com/u/ggUE85HE',
 				'PANICORE': 'https://pixeldrain.com/u/xrqq3ExQ',
+				'The Crew 2': 'https://pixeldrain.com/u/cFb87msK',
 				'Dead Space 2': 'https://pixeldrain.com/u/a5eeMofw',
 				'Hollow Knight Silksong': 'https://pixeldrain.com/u/c6fQUMm3',
 				'MADiSON': 'https://pixeldrain.com/u/c6fQUMm3',
@@ -9074,6 +9100,7 @@ function closeModal(modalId) {
 				'DLC Euro Truck Simulator 2': 'Wejdź za kierownicę i odkryj całą Europę wraz z oficjalnymi rozszerzeniami. Od malowniczych autostrad Skandynawii po kręte drogi Bałkanów – zbuduj transportowe imperium i poczuj prawdziwą wolność na trasie.',
 				'Accident': 'Każda sekunda ma znaczenie. Symulator ratowania ofiar wypadków – sprawdź się jako bohater przypadkiem, ucz się zasad pierwszej pomocy i zmierz z presją.',
                 'Watch Dogs': 'Vigilante w Chicago. System ctOS i inwigilacja.',
+				'The Crew 2': 'Otwarty świat, setki pojazdów i nieskończone możliwości. Przemierzaj USA w powietrzu, na lądzie i wodzie, i stwórz własną karierę wyścigową.',
 				'ACE COMBAT 7 SKIES UNKNOWN': 'Wejdź do kokpitu nowoczesnych myśliwców i stań do powietrznych starć. Ace Combat 7: Skies Unknown to emocjonujące bitwy, realistyczna grafika i epicka kampania fabularna.',
 				'Job Simulator': 'W świecie przyszłości, gdzie roboty zastąpiły ludzi, Job Simulator pozwala na zabawną symulację dawnych zawodów – od kucharza po biurowego pracownika.',
 				'Voyagers of Nera': 'Wyrusz w podróż po oceanie pełnym sekretów. Odkrywaj wyspy, współpracuj z towarzyszami i zmierz się z tajemniczymi stworzeniami Nery.',
