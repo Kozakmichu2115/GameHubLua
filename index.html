@@ -3011,6 +3011,24 @@ footer {
                 </div>
             </div>
 
+<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="rpg premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1761742926" alt="Crusader Kings III">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Crusader Kings III</h3>
+                    <span class="game-category">RPG</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Buduj dynastię, zdradzaj rodzinę, podbijaj świat. Historia pisze się twoją krwią.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('Crusader Kings III', 'rpg', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1761742926')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
             <!-- Game Card  -->
             <div class="game-card" data-category="horror">
                 <div class="game-image">
@@ -4162,6 +4180,19 @@ footer {
                     <span class="game-category">Horror</span>
                     <p class="game-description">Pracuj dla korporacji, zbieraj złom na opuszczonych stacjach i unikaj potworów. Lethal Company to kooperacyjny horror pełen ryzyka i czarnego humoru.</p>
                     <button class="download-btn" onclick="checkAuthBeforeDownload('Lethal Company', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1750273815')">Pobierz</button>
+                </div>
+            </div>
+			
+				<!-- Game Card 25 -->
+            <div class="game-card" data-category="horror">
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/46cd5aa0d2a086e9bd1328fced093c6059a5328e/header.jpg?t=1759004709" alt="Owl Lights">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Owl Lights</h3>
+                    <span class="game-category">Horror</span>
+                    <p class="game-description">Owl Lights – sen, wspomnienie i koszmar w jednym. Idź za blaskiem… albo uciekaj.</p>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('Owl Lights', 'horror', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/46cd5aa0d2a086e9bd1328fced093c6059a5328e/header.jpg?t=1759004709')">Pobierz</button>
                 </div>
             </div>
 			
@@ -7486,7 +7517,7 @@ function closeModal(modalId) {
 				'The Crew 2',
 				'Escape Simulator 2',
 				'MISERY',
-				's',
+				'Crusader Kings III',
 				's',
 				's',
 				's',
@@ -7670,6 +7701,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238820/ss_8fce61feee86b183dd6c0b38270ea445017c2794.600x338.jpg?t=1734373919',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238820/ss_c378ec3b0951e274244f337cf6fd42cd0ce875ed.600x338.jpg?t=1734373919',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238820/ss_bec636fba276b96066f4f73d1f28034962bc15ea.600x338.jpg?t=1734373919'
+				],
+				'Crusader Kings III': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/ba7f77f7eb96d48f267e970583ddaa32b3b5eb98/ss_ba7f77f7eb96d48f267e970583ddaa32b3b5eb98.600x338.jpg?t=1761742926',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/8776b7e4b345cfb7dcdb5888ecf04cc96e47a015/ss_8776b7e4b345cfb7dcdb5888ecf04cc96e47a015.600x338.jpg?t=1761742926',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/76a6d0fea5a9676d4fa419c2ff44157d17ae9ef9/ss_76a6d0fea5a9676d4fa419c2ff44157d17ae9ef9.600x338.jpg?t=1761742926',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/0ed600e9f23f5fd9eebaa4bc16e883b5fbc12d46/ss_0ed600e9f23f5fd9eebaa4bc16e883b5fbc12d46.600x338.jpg?t=1761742926',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/e3ee2a08a2102755f3e4639149617e859943a594/ss_e3ee2a08a2102755f3e4639149617e859943a594.600x338.jpg?t=1761742926'
 				],
 				'DLC The Sims 4': [
                     'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2815290/header.jpg?t=1737020514',
@@ -8448,6 +8486,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/ss_ef26440dc87e4d571139f5c64a22035d86723442.600x338.jpg?t=1727184011',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/ss_dddecb78ba5ae9eecbe17a22f09f5281609d63a0.600x338.jpg?t=1727184011'
                 ],
+				'Owl Lights': [
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/f78e9d4492b80081dd0bd6f79a568b20c904b8f1/ss_f78e9d4492b80081dd0bd6f79a568b20c904b8f1.600x338.jpg?t=1759004709',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/06173e5b1d43896441af2295c38c003b926d349a/ss_06173e5b1d43896441af2295c38c003b926d349a.600x338.jpg?t=1759004709',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/35a366d3a32a80329d9f139faff617278ddd7054/ss_35a366d3a32a80329d9f139faff617278ddd7054.600x338.jpg?t=1759004709',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/155e1dff3eed875acd559a1e06668551fdc1755d/ss_155e1dff3eed875acd559a1e06668551fdc1755d.600x338.jpg?t=1759004709',
+                    'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3724650/87ed9dc2df5903efaa432f5fbda0920294eb4bdc/ss_87ed9dc2df5903efaa432f5fbda0920294eb4bdc.600x338.jpg?t=1759004709'
+                ],
 				'LEGO MARVEL Super Heroes 2': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/647830/ss_9643cb4bed727e60160d7193c1581c85abface75.600x338.jpg?t=1745539515',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/647830/ss_7fa270d2fe28d0e869fc1f94ae9a94555c739f75.600x338.jpg?t=1745539515',
@@ -9033,6 +9078,8 @@ function closeModal(modalId) {
 				'DLC The Sims 4': 'https://pixeldrain.com/u/TmgRfyEK',
 				'Gang Beasts': 'https://pixeldrain.com/u/nZrTCrRx',
 				'Project Zomboid': 'https://pixeldrain.com/u/AnF1Vc37',
+				'Crusader Kings III': 'https://pixeldrain.com/u/NUErzUoM',
+				'Owl Lights': 'https://pixeldrain.com/u/NZsehde8',
 				'Dying Light 2 Reloaded Edition': 'https://pixeldrain.com/u/CGpaWUkE',
 				'Bakery Cafe Simulator': 'https://pixeldrain.com/u/y45nUPiL',
 				'South Park Fractured but Whole': 'https://pixeldrain.com/u/Fkf1LenS',
@@ -9128,6 +9175,7 @@ function closeModal(modalId) {
                 'Stardew Valley': 'Ucieczka na wieś, która zamienia się w drugi etat. Rolnictwo, ryby i dziwna fascynacja sąsiadki.',
                 'The Isle': 'Dinozaury, prehistoria i prosta zasada: ty jadasz albo ciebie jedzą. Survival w najczystszej postaci.',
                 'Teardown': 'LEGO dla dorosłych. Rozwalaj, eksploduj, używaj spychacza jak miecza świetlnego. Fizyka w służbie chaosu.',
+				'Owl Lights': 'W mroku lasu migoczą światła. Każde z nich prowadzi — ale nie wszystkie dokąd chcesz.',
                 'Scoot': 'Tony Hawk w wersji minimalistycznej. Hulajnoga, tricki i asfalt na twarzy. Proste zasady: jedź lub giń.',
 				'VEIN': 'Krew to nowa waluta. Hakuj geny, modyfikuj ciało i walcz o przetrwanie w metropolii, która żyje twoim pulsem.',
 				'No Im not a Human': 'Wciel się w potwora, który próbuje udawać człowieka. No, I’m not a Human to surrealistyczna platformówka o tożsamości, buncie i potworach w ludzkiej skórze.',
@@ -9199,6 +9247,7 @@ function closeModal(modalId) {
                 'Assassins Creed III Remastered': 'Rewolucja Amerykańska przez oczy półkrwi. Walki na tomahawk i nowy engine.',
                 'Call of Duty Modern Warfare 2': 'Kultowe "No Russian". Spec Ops i ulepszony multiplayer.',
                 'Bodycam': 'Innowacyjny FPS z perspektywy bodycam. Realistyczne ballistics i procedury policyjne.',
+				'Crusader Kings III': 'Wojny, spiski i romanse. Od jednej decyzji zależy los twojego rodu.',
                 'LEGO Batman 2 DC Super Heroes': 'Pierwsza LEGO z pełnym głosem. Gotham + Metropolis i 50+ postaci DC.',
                 'LEGO Batman 3 Beyond Gotham': 'Kosmiczna przygoda z Lanternami. 150+ postaci i planetarne środowiska.',
                 'Metro 2033 Redux': 'Remaster postapo w rosyjskich metro. Survival horror z ograniczonymi zasobami.',
