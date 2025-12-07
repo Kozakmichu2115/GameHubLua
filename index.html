@@ -12,7 +12,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
     <style>
         :root {
-    --primary: #00ff88;a
+    --primary: #00ff88;
     --primary-dark: #00cc6d;
     --secondary: #1a1a2e;
     --dark: #0d0d15;
@@ -2771,6 +2771,24 @@ footer {
                     <span class="premium-category-badge">Premium</span>
                     <p class="game-description">Los Santos, kradzieże, chaos. Trzech bohaterów, jeden cel. FIB to żart.</p>
                     <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('Grand Theft Auto V Legacy', 'action', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1741120008')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
+			<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="action premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1677280/header.jpg?t=1764272700" alt="Company of Heroes 3">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Company of Heroes 3</h3>
+                    <span class="game-category">Akcja</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Poprowadź swoje oddziały w dynamicznych bitwach II wojny światowej, łącząc taktyczne decyzje z intensywną akcją w Company of Heroes 3.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('Company of Heroes 3', 'action', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1677280/header.jpg?t=1764272700')">Odblokuj</button>
                 </div>
                 <div class="download-instructions" id="witcher3Instructions" style="display: none;">
                     <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
@@ -7911,6 +7929,13 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_ac925ffc6279649e52f816e28bde83da05c8b8e2.600x338.jpg?t=1736372299',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_9545d776eb5ef265dd882dc08b7c4e38df46878c.600x338.jpg?t=1736372299'
 				],
+				'Company of Heroes 3': [
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/2c8431f5d785215e33e308bc52dd03a1b9a8cbec/ss_2c8431f5d785215e33e308bc52dd03a1b9a8cbec.1920x1080.jpg?t=1764272700',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/2383f24744ba457757c260f84735142fcb0ffd79/ss_2383f24744ba457757c260f84735142fcb0ffd79.1920x1080.jpg?t=1764272700',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/04979dbea2917ffaa52bad8e92cddda19fac4e7e/ss_04979dbea2917ffaa52bad8e92cddda19fac4e7e.1920x1080.jpg?t=1764272700',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/a4ce20c3aa5634e45d85a8a69397e8afe58948dc/ss_a4ce20c3aa5634e45d85a8a69397e8afe58948dc.1920x1080.jpg?t=1764272700',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/ss_d27cd33c8cb52372bd264f40e62eba5dac7b6ec4.1920x1080.jpg?t=1764272700'
+				],
                 'BMX Streets': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/871540/ss_f4268edf650cd9701fb0ea9264edbaceea073f4d.600x338.jpg?t=1713979437',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/871540/ss_a0f59b0efe29b61283918e84c7be446babf2c137.600x338.jpg?t=1752875855',
@@ -8928,6 +8953,7 @@ function closeModal(modalId) {
                 'SnowRunner': 'https://drive.google.com/file/d/1NQnb9a0YocGe1RXKVgk34k6fvyN3SzO8/view?usp=sharing',
                 'The Isle': 'https://drive.google.com/file/d/1pnPxUlqXEvG3d2VOpwMdn7IAj9SVcKQ4/view?usp=sharing',
                 'X-Plane 12': 'https://drive.google.com/file/d/1NnJh6DYo-E9sRKtWxVjatvHONhKQQ3a5/view?usp=sharing',
+				'Company of Heroes 3': 'https://pixeldrain.com/u/D6srYt7x',
                 'Battlefield 3': 'https://drive.google.com/file/d/1vgENt8LZpapOHoayG5eQ8lHoBaYBOSh8/view?usp=sharing',
                 'Fallout 4': 'https://e.pcloud.link/publink/show?code=XZbBc6ZvuqClXQ4Jshs7Y0MgjwDMpw2QD5X',
                 'Far Cry 3': 'https://e.pcloud.link/publink/show?code=XZQBc6Z0xmYiM1I484B4D6NRvW84Y5TokbV',
@@ -9063,7 +9089,7 @@ function closeModal(modalId) {
 				'LEGO City Undercover': 'https://pixeldrain.com/u/ycbTjxdU',
 				'LEGO Pirates of the Caribbean The Video Game': 'https://pixeldrain.com/u/PHN8SHmt',
 				'Call of Duty 4 Modern Warfare': 'https://pixeldrain.com/u/DpgUhpbR',
-				'ScootX': 'https://pixeldrain.com/u/pR1kyeeL',
+				'ScootX': 'https://pixeldrain.com/u/Yxp6Miw5',
 				'Call of Duty 2003': 'https://pixeldrain.com/u/h7tksHYc',
 				'Call of Duty World at War': 'https://pixeldrain.com/u/ZeZk8JuC',
 				'WRC 9 FIA World Rally': 'https://pixeldrain.com/u/n8knwkw4',
@@ -9285,6 +9311,7 @@ function closeModal(modalId) {
 				'Sejm The Game': 'Symulator chaosu politycznego. Buduj koalicje, krzycz z mównicy i przetrwaj obrady do przerwy na kawę.',
                 'Police Simulator Patrol Officers': 'Od mandatów po pościgi. Realistyczne przepisy drogowe.',
                 'Green Hell': 'Survival w amazońskiej dżungli. System infekcji i halucynacji.',
+				'Company of Heroes 3': 'Wejdź na pole walki jako dowódca alianckich sił i staw czoła złożonym wyzwaniom II wojny światowej. Company of Heroes 3 oferuje głęboką strategię, dynamiczne starcia oraz rozbudowaną kampanię, w której każdy rozkaz wpływa na losy całego frontu. Zdominuj pola bitew dzięki sprytnej taktyce, manewrom i potędze swoich wojsk.',
 				'Dying Light 2 Reloaded Edition': 'Dying Light 2 Reloaded Edition to pełne wydanie hitu z otwartym światem. Parkour, walka wręcz i przetrwanie w mieście pogrążonym w mroku – teraz z dodatkami i ulepszeniami.',
 				'Bakery Cafe Simulator': 'Stwórz własną piekarnię i kawiarnię od podstaw. Piecz, serwuj i rozwijaj biznes, by przyciągnąć klientów i zbudować smakowe imperium.',
 				'Content Warning': 'Content Warning łączy survival horror z komedią – eksploruj, nagrywaj i wrzucaj do sieci, ale pamiętaj: dla sławy musisz przeżyć.',
