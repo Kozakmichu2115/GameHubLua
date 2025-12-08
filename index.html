@@ -4509,6 +4509,24 @@ footer {
                 </div>
             </div>
 			
+			<!-- Game Card 1 (Premium) -->
+			<div class="game-card premium" data-category="simulation premium">
+                <div class="premium-badge">PREMIUM</div>
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/491530/header.jpg?t=1667832079" alt="Notruf 112">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Notruf 112</h3>
+                    <span class="game-category">Symulatory</span>
+                    <span class="premium-category-badge">Premium</span>
+                    <p class="game-description">Wciel się w strażaka i reaguj na realistyczne sytuacje awaryjne, obsługując dynamiczne akcje ratownicze w Notruf 112.</p>
+                    <button class="download-btn" id="witcher3Btn" onclick="checkAuthBeforeDownload('Notruf 112', 'simulation', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/491530/header.jpg?t=1667832079')">Odblokuj</button>
+                </div>
+                <div class="download-instructions" id="witcher3Instructions" style="display: none;">
+                    <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
 			<!-- Game Card 25 -->
             <div class="game-card" data-category="simulation">
                 <div class="game-image">
@@ -4537,6 +4555,19 @@ footer {
                 </div>
                 <div class="download-instructions" id="witcher3Instructions" style="display: none;">
                     <p>Wypakuj plik ZIP i uruchom setup.exe aby zainstalować</p>
+                </div>
+            </div>
+			
+			<!-- Game Card 25 -->
+            <div class="game-card" data-category="action">
+                <div class="game-image">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148" alt="Geometry Dash">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Geometry Dash</h3>
+                    <span class="game-category">Akcja</span>
+                    <p class="game-description">Pokonuj rytmiczne, pełne pułapek poziomy, skacząc i unikając przeszkód w dynamicznej grze Geometry Dash.</p>
+                    <button class="download-btn" onclick="checkAuthBeforeDownload('Geometry Dash', 'action', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148')">Pobierz</button>
                 </div>
             </div>
 			
@@ -7549,7 +7580,7 @@ function closeModal(modalId) {
 				'Escape Simulator 2',
 				'MISERY',
 				'Crusader Kings III',
-				's',
+				'Notruf 112',
 				's',
 				's',
 				's',
@@ -7928,6 +7959,34 @@ function closeModal(modalId) {
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_141c2252c2e5376acab010da2f9029cae61ed520.600x338.jpg?t=1736372299',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_ac925ffc6279649e52f816e28bde83da05c8b8e2.600x338.jpg?t=1736372299',
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_9545d776eb5ef265dd882dc08b7c4e38df46878c.600x338.jpg?t=1736372299'
+				],
+				'My Summer Car': [
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_4310893aa75878f8150dfb0b8e794372a2117ba2.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_dbe7c4077396f0960c33b0f26c39feb6c4cfded0.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_141c2252c2e5376acab010da2f9029cae61ed520.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_ac925ffc6279649e52f816e28bde83da05c8b8e2.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_9545d776eb5ef265dd882dc08b7c4e38df46878c.600x338.jpg?t=1736372299'
+				],
+				'My Summer Car': [
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_4310893aa75878f8150dfb0b8e794372a2117ba2.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_dbe7c4077396f0960c33b0f26c39feb6c4cfded0.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_141c2252c2e5376acab010da2f9029cae61ed520.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_ac925ffc6279649e52f816e28bde83da05c8b8e2.600x338.jpg?t=1736372299',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/ss_9545d776eb5ef265dd882dc08b7c4e38df46878c.600x338.jpg?t=1736372299'
+				],
+				'Geometry Dash': [
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_05cb182b93131a5faf0516232a7ad27c83f2c0e8.1920x1080.jpg?t=1703006148',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_5aa7c52b6f29b138712c0e89c7f9f2791ec289a9.1920x1080.jpg?t=1703006148',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_267a8eff67ed643e4f1d49054da5102a07b7ffae.1920x1080.jpg?t=1703006148',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_0e841fa6622be28851d8aa9624bb0d727c533029.1920x1080.jpg?t=1703006148',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/ss_1e5328e6955e4037c4e1dfbe761dbb34f3d293da.1920x1080.jpg?t=1703006148'
+				],
+				'Notruf 112': [
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491530/ss_060ab4f6eed586267ad637ba235e8634dca1fcaf.1920x1080.jpg?t=1667832079',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491530/ss_d269787929cd088365427a7781d8a89b4e6ea526.1920x1080.jpg?t=1667832079',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491530/ss_74dc751bc12959305b6fda98c078077e4e348a04.1920x1080.jpg?t=1667832079',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491530/ss_9256e7e22c1c64091e574d253733dd1dcc855b2f.1920x1080.jpg?t=1667832079',
+                    'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491530/ss_c763b5a34fddbf7d58f6bfd6b093f9b2d1d3a8f9.1920x1080.jpg?t=1667832079'
 				],
 				'Company of Heroes 3': [
                     'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1677280/2c8431f5d785215e33e308bc52dd03a1b9a8cbec/ss_2c8431f5d785215e33e308bc52dd03a1b9a8cbec.1920x1080.jpg?t=1764272700',
@@ -8969,6 +9028,8 @@ function closeModal(modalId) {
                 'The Long Dark': 'https://e.pcloud.link/publink/show?code=XZNBc6ZxqBYEj8asQY3GKdVhiaPtpkzcqOX',
                 'The Long Drive': 'https://e.pcloud.link/publink/show?code=XZqBc6ZhfSJhBekBmFMURHcJlzo8Rs86NG7',
                 'The Witcher 3': 'https://pixeldrain.com/u/k3t6yg8y',
+				'Notruf 112': 'https://pixeldrain.com/u/sajfHZXX',
+				'Geometry Dash': 'https://pixeldrain.com/u/BV1bh7fq',
                 'WWE 2K25': 'https://e.pcloud.link/publink/show?code=XZ2Bc6Za4wXx6tbbvk2JmLjRGuLBfl3u1Jy',
                 'Cyberpunk 2077': 'https://pixeldrain.com/u/6htJw6pM',
                 'Red Dead Redemption 2': 'https://pixeldrain.com/u/8XLrph7j',
@@ -9242,6 +9303,8 @@ function closeModal(modalId) {
                 'Far Cry New Dawn': 'Kolorowa apokalipsa. Zbuduj bazę, zbierz złom i rozwal Highwaymen. Post-nuklearny disneyland.',
                 'Spec Ops: The Line': 'Piasek, PTSD i fabuła, która wchodzi w głowę. FPS, po którym potrzebujesz prysznica moralnego.',
                 'Enemy Front': 'Strzelaj do nazistów, ratuj historię. Klasyczne BOOM! w mundurze i z karabinem.',
+				'Notruf 112': 'Dołącz do profesjonalnej jednostki straży pożarnej i zmierz się z realistycznymi wyzwaniami codziennej służby. W Notruf 112 czekają na Ciebie szczegółowo odwzorowane pojazdy, wymagające akcje ratownicze oraz sytuacje, w których szybkie decyzje mogą uratować życie. Przeżyj intensywne interwencje i poznaj prawdziwe oblicze strażackiej pracy.',
+				'Geometry Dash': 'Wejdź do świata pełnego rytmu, refleksu i wyzwań. Geometry Dash oferuje szybkie, precyzyjne skoki, złożone poziomy oraz muzykę, która nadaje tempa każdej przeszkodzie. Przetestuj swoje umiejętności, odblokowuj nowe elementy i mierz się z coraz trudniejszymi wyzwaniami w tej uzależniającej grze platformowej.',
                 'Tomb Raider': 'Lara Croft przed szkoleniem. Upadki, siniaki i pierwsze morderstwa w imię archeologii.',
 				'DEVOUR': 'DEVOUR to intensywny survival horror – graj sam lub ze znajomymi i staw czoła bezlitosnym siłom zła, zanim one dopadną Ciebie.',	
 				'Project Zomboid': 'Samotnie lub z przyjaciółmi – eksploruj, craftuj i przetrwaj. W Project Zomboid każda decyzja ma znaczenie, a śmierć jest ostateczna.',
